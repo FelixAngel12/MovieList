@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backDes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DescripcionPeliculas">
+
+    <ScrollView
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/photo_view"
+                    android:layout_width="132dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="TODO"
+                    tools:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/NombreDeLaPelicula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="24dp"
+                    android:textStyle="normal|bold|italic"
+                    tools:text="Uncharted" />
+
+                <TextView
+                    android:id="@+id/Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold|italic"
+                    tools:text="Nathan Drake, un joven astuto en la calle, y su socio bromista Victor Sully Sullivan se embarcan en una peligrosa búsqueda del tesoro más grande jamás encontrado mientras siguen pistas que pueden conducir al hermano perdido de Nathan." />
+
+                <TextView
+                    android:id="@+id/Genero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold|italic"
+                    tools:text="Género: Aventura, Fantasia, Accion, Comedia" />
+
+                <Button
+                    android:id="@+id/BtnVolver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:text="@string/BtnVolver"
+                    tools:text="Volver" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
